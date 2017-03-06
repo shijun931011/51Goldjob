@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/public_top_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/public_layout_topbar" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/resume_edit_name_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:lineSpacingExtra="10dp"
+                    android:text=""
+                    android:textColor="#5B5B5B"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/resume_edit_percent_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="right|center"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:lineSpacingExtra="10dp"
+                    android:text=""
+                    android:textColor="#5B5B5B"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <com.example.user.a51goldjob.view.SegmentedGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/resume_edit_name_rb"
+                    style="@style/RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit_name" 
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/resume_edit_perview_rb"
+                    style="@style/RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/preview_resume" 
+                    />
+            </com.example.user.a51goldjob.view.SegmentedGroup>
+
+            <TextView
+                android:id="@+id/resume_edit_baseinfo_title_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/resume_edit_baseinfo_title"
+                android:textColor="@color/gray2"
+                android:textSize="15sp" />
+
+            <!--基本资料-->
+            <com.example.user.a51goldjob.view.NoScrollListview
+                android:id="@+id/resume_edit_baseinfo_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_top_bottom_line" >
+            </com.example.user.a51goldjob.view.NoScrollListview>
+
+            <TextView
+                android:id="@+id/resume_edit_otherinfo_title_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/resume_edit_otherinfo_title"
+                android:textColor="@color/gray2"
+                android:textSize="15sp" />
+
+            <!--  -->
+            <com.example.user.a51goldjob.view.NoScrollListview
+                android:id="@+id/resume_edit_otherinfo_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_top_bottom_line" >
+            </com.example.user.a51goldjob.view.NoScrollListview>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

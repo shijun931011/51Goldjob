@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical" >
+    
+    <FrameLayout  
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content" 
+        >
+        
+	    <ImageView android:id="@+id/home1_imgview"
+		    android:layout_height="wrap_content" 
+		    android:layout_width="wrap_content" 
+		    android:src="@drawable/home_one"
+		    />
+
+   		<LinearLayout  
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" 
+			android:layout_gravity="center_vertical"
+        >
+		<ImageButton
+		    android:id="@+id/jump_imgbtn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:adjustViewBounds="true"
+		    android:padding="0dp"
+		    android:layout_marginLeft="246dp"
+		    android:layout_marginTop="354dp"
+		    android:src="@drawable/btn_jump" />
+		</LinearLayout>
+
+    </FrameLayout>
+    
+</LinearLayout>

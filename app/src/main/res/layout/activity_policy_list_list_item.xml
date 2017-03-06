@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:padding="10dp">
+  
+	<TextView android:id="@+id/policy_list_list_item_lineno_txt"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="10px"
+		android:layout_marginRight="20px"
+		android:textColor="@color/text_white"
+		android:text=""
+		android:background="@drawable/bgicon_shape"
+	/>
+	
+	<TextView android:id="@+id/policy_list_list_item_title_txt"
+		android:layout_width="fill_parent"
+		android:layout_height="24dp"
+        android:lineSpacingExtra="20dp"
+		android:layout_toRightOf="@id/policy_list_list_item_lineno_txt"
+		android:textSize="16sp"
+		android:text=""
+	/>
+	<TextView android:id="@+id/policy_list_list_item_preview_txt"
+		android:layout_width="fill_parent"
+		android:layout_height="20dp"
+        android:lineSpacingExtra="20dp"
+		android:layout_toRightOf="@id/policy_list_list_item_lineno_txt"
+		android:layout_below="@id/policy_list_list_item_title_txt"
+		android:textSize="14dp"
+		android:text=""
+	/>
+	
+	<TextView android:id="@+id/policy_list_list_item_time_txt"
+		android:layout_width="fill_parent"
+		android:layout_height="20dp"
+        android:lineSpacingExtra="20dp"
+		android:layout_toRightOf="@id/policy_list_list_item_lineno_txt"
+		android:layout_below="@id/policy_list_list_item_preview_txt"
+		android:textSize="14dp"
+		android:textColor="@color/gray1"
+		android:text=""
+	/>
+</RelativeLayout>

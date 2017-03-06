@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_weight="1"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/my_resume_item_resume_name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#5B5B5B"
+                android:gravity="center|left"
+                android:text="@string/resume_name"
+                android:textSize="20sp" />
+            
+            <TextView
+                android:id="@+id/my_resume_item_update_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_resume_item_resume_name_txt"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:text="@string/resume_update"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/gray1"
+                android:textSize="14sp" />
+            
+            <TextView
+                android:id="@+id/my_resume_item_updatedatedt_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_resume_item_resume_name_txt"
+                android:layout_toRightOf="@id/my_resume_item_update_txt"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/gray1"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/my_resume_item_create_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_resume_item_update_txt"
+                android:text="@string/resume_create_colon"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/gray1"
+                android:textSize="14sp"
+                android:visibility="visible" />
+            
+            <TextView
+                android:id="@+id/my_resume_item_createdatedt_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_resume_item_updatedatedt_txt"
+                android:layout_toRightOf="@id/my_resume_item_create_txt"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/gray1"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/my_resume_top_right_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_gravity="right|bottom"
+            android:gravity="right|center_vertical"
+            android:layout_weight="1.5">
+            
+            <Button 
+                android:id="@+id/my_resume_item_public_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:background="@drawable/bg_public_word_two"
+                android:text=""
+                android:textColor="@drawable/orange"
+                android:textSize="14sp"
+                android:drawableRight="@drawable/my_resume_item_public_btn_bg_icon"
+                />
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border_bottom_line_gray"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:text="@string/resume_finish_percent_colon"
+            android:textSize="14sp"
+            android:textColor="#5B5B5B"
+            android:layout_marginRight="10dp"
+            android:visibility="visible" />
+
+            <com.example.user.a51goldjob.view.EasyProgressBar.EasyProgressBar
+            android:id="@+id/my_resume_item_percent_progress"
+            style="@style/progressbar_orange"
+            android:layout_width="match_parent"
+            android:layout_height="15dip"
+            custom:textEnd=""
+            android:progressDrawable="@drawable/progress_style"
+            android:max="100"
+            android:progress="10" /><!-- style="@android:style/Widget.ProgressBar.Horizontal"
+            android:secondaryProgress="75" -->  
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/text_white"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/my_resume_edit_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:src="@drawable/icon_resume_edit" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:textColor="#5B5B5B"
+                    android:gravity="center"
+                    android:text="@string/resume_edit"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/my_resume_refresh_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="60dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:src="@drawable/icon_resume_refresh" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:textColor="#5B5B5B"
+                    android:gravity="center"
+                    android:text="@string/resume_refresh"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/my_resume_preview_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:src="@drawable/icon_resume_preview" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#5B5B5B"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/resume_preview"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/my_resume_delete_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="60dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:src="@drawable/icon_resume_delete" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#5B5B5B"
+                    android:text="@string/resume_delete"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

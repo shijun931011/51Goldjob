@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+             >
+			<ImageView android:id="@+id/cert_list_item_delete_imageview" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+				android:src="@drawable/delete_one"
+				android:layout_margin="10dp"
+				android:contentDescription="@string/opt_delete"
+				android:focusable="false"
+				android:clickable="true"
+				android:visibility="gone"
+			/>
+            <TextView
+                android:id="@+id/activity_cert_list_item_certname"
+                android:layout_width="wrap_content"
+                android:layout_height="26sp"
+                android:lineSpacingExtra="20dp"
+                android:layout_toRightOf="@id/cert_list_item_delete_imageview"
+                android:text=""
+                
+                android:textColor="#5B5B5B"
+                android:textSize="18sp" />
+
+            
+            <TextView
+                android:id="@+id/activity_cert_list_item_certid"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_below="@id/activity_cert_list_item_certname"
+                android:lineSpacingExtra="20dp"
+                android:text=""
+                android:layout_toRightOf="@id/cert_list_item_delete_imageview"
+     
+                android:textColor="@color/gray1"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/public_top_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/public_layout_topbar" />
+        
+        <TableLayout
+        android:layout_marginTop="10dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_layout_list_two" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="16sp"
+                android:textColor="#5B5B5B"
+                android:text="@string/choose_intro" />
+
+            <TextView
+                android:id="@+id/more_intro_id"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:drawableRight="@drawable/icon_arrow"
+                android:gravity="right"
+                android:tag="intro"
+                android:ems="10"
+                />
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_layout_list_two" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:textColor="#5B5B5B"
+                android:textSize="16sp"
+                android:text="@string/choose_challenge" />
+
+            <TextView
+                android:id="@+id/more_challenge_id"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:drawableRight="@drawable/icon_arrow"
+                android:gravity="right"
+                android:tag="challenge"
+                android:ems="10"
+                />
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_layout_list_two" >
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="#5B5B5B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/choose_standard" />
+
+            <TextView
+                android:id="@+id/more_standard_id"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:drawableRight="@drawable/icon_arrow"
+                android:gravity="right"
+                android:tag="standard"
+                android:ems="10"
+                />
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_layout_list_two" >
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="#5B5B5B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/choose_structure" />
+
+            <TextView
+                android:id="@+id/more_structure_id"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:drawableRight="@drawable/icon_arrow"
+                android:gravity="right"
+                android:tag="structure"
+                android:ems="10"
+                />
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_layout_list_two" >
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="#5B5B5B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/choose_cooperation" />
+
+            <TextView
+                android:id="@+id/more_cooperation_id"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:drawableRight="@drawable/icon_arrow"
+                android:gravity="right"
+                android:tag="cooperation"
+                android:ems="10"
+                />
+        </TableRow>
+        
+        
+    </TableLayout>
+    </LinearLayout>
+</LinearLayout>

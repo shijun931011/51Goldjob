@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="base_info_column_name_array">
+        <item>base</item>
+    </string-array>
+    <string-array name="base_info_array">
+        <item>基本资料</item>
+    </string-array>
+    <string-array name="base_info_activity_class_array">
+        <item>com.example.user.a51goldjob.activity.BaseDocumentActivity</item>
+    </string-array>
+    <string-array name="other_info_column_name_array">
+		<item>job</item>
+		<item>work</item>
+		<item>proj</item>
+		<item>edu</item>
+		<item>lan</item>
+		<item>train</item>
+		<item>cert</item>
+		<item>other</item>
+		<item>high</item>
+    </string-array>
+    <string-array name="other_info_array">
+		<item>职业意向</item>
+		<item>工作经历</item>
+		<item>项目经验</item>
+		<item>教育经历</item>
+		<item>语言能力</item>
+		<item>培训经历</item>
+		<item>证书</item>
+		<item>附加信息</item>
+		<item>高级人才附加信息</item>
+    </string-array>
+     <string-array name="other_info_activity_class_array">
+        <item>com.example.user.a51goldjob.activity.WillPositionActivity</item>
+        <item>com.example.user.a51goldjob.activity.WorkHistoryActivity</item>
+        <item>com.example.user.a51goldjob.activity.ProjectExperienceActivity</item>
+        <item>com.example.user.a51goldjob.activity.EducationActivity</item>
+        <item>com.example.user.a51goldjob.activity.LanguageListActivity</item>
+        <item>com.example.user.a51goldjob.activity.TrainingActivity</item>
+        <item>com.example.user.a51goldjob.activity.CertActivity</item>
+        <item>com.example.user.a51goldjob.activity.AdditionalActivity</item>
+        <item>com.example.user.a51goldjob.activity.AdvancedActivity</item>
+    </string-array>
+</resources>

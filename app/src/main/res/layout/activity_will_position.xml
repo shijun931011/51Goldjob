@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/public_top_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/public_layout_topbar" />
+        
+        <TableLayout
+        android:layout_marginTop="10dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*" >
+
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_layout_list_two"
+            android:padding="7dip"
+             >
+       
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                >
+                <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="*"
+    android:textColor="#FF0000"
+    android:layout_marginTop="7dip"
+    ></TextView>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="5dip"
+                android:textSize="18sp"
+                android:textColor="#5B5B5B"
+                android:text="@string/jobnature" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/willposition_jobnature_id"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:drawableRight="@drawable/icon_arrow"
+                android:gravity="right"
+                android:hint="@string/choose_hit"
+                android:textSize="16sp"
+                
+                  android:textColor="@android:color/darker_gray"
+                android:paddingRight="15dip"
+                android:tag="DICT_JOB_JOBTYPE"
+                android:ems="10"
+                />
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_layout_list_two"
+             android:padding="7dip"
+            >
+ <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                >
+                <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="*"
+    android:textColor="#FF0000"
+    android:layout_marginTop="7dip"
+    ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:textColor="#5B5B5B"
+                android:textSize="18sp"
+                android:text="@string/sitecity" />
+</LinearLayout>
+            <TextView
+                android:id="@+id/willposition_sitecity_id"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:drawableRight="@drawable/icon_arrow"
+                android:gravity="right"
+                android:hint="@string/choose_hit"
+                android:tag="DICT_COMP_CITY"	
+                android:textSize="16sp"
+                 android:paddingRight="15dip"
+                   android:textColor="@android:color/darker_gray"
+                android:ems="10"
+                android:clickable="true"
+                />
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_layout_list_two"
+             android:padding="7dip"
+            >
+
+             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                >
+                <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="*"
+    android:textColor="#FF0000"
+    android:layout_marginTop="7dip"
+    ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#5B5B5B"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="18sp"
+                android:text="@string/postids" />
+            </LinearLayout>
+
+           	<TextView
+                android:id="@+id/willposition_postids_id"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:drawableRight="@drawable/icon_arrow"
+                android:gravity="right"
+                android:hint="@string/choose_hit"
+                android:tag="DICT_COMP_INDUSTRY"	
+                android:ems="10"
+                android:textSize="16sp"
+                 android:paddingRight="15dip"
+                   android:textColor="@android:color/darker_gray"
+                android:clickable="true"
+                />
+        </TableRow>
+
+        
+         <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:padding="7dip"
+            android:background="@drawable/btn_layout_list_two" >
+
+              <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                >
+                <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="*"
+    android:textColor="#FF0000"
+    android:layout_marginTop="7dip"
+    ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#5B5B5B"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="18sp"
+                android:text="@string/expectsalarycode" />
+</LinearLayout>
+            <TextView
+                android:id="@+id/willposition_expectsalarycode_id"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:drawableRight="@drawable/icon_arrow"
+                android:gravity="right"
+                android:hint="@string/choose_hit"
+                android:textSize="16sp"
+                  android:textColor="@android:color/darker_gray"
+                android:tag="DICT_RESUME_ESC"	
+                 android:paddingRight="15dip"
+                android:ems="10"
+                />
+        </TableRow>
+        
+          <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:padding="7dip"
+            android:background="@drawable/btn_layout_list_two" >
+
+               <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                >
+                <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="*"
+    android:textColor="#FF0000"
+    android:layout_marginTop="7dip"
+    ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:textColor="#5B5B5B"
+                android:textSize="18sp"
+                android:layout_marginTop="5dip"
+                android:paddingLeft="10dp"
+                android:text="@string/poststime" />
+</LinearLayout>
+            <TextView
+                android:id="@+id/willposition_poststime_id"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:drawableRight="@drawable/icon_arrow"
+                android:gravity="right"
+                
+                android:textSize="16sp"
+                 android:paddingRight="15dip"
+                   android:textColor="@android:color/darker_gray"
+                android:hint="@string/choose_hit"
+                android:tag="DICT_RESUME_POSTTIME"	
+                android:ems="10"
+                />
+        </TableRow>
+        
+         <TableRow
+            android:layout_width="wrap_content"
+             android:padding="7dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_layout_list_two" >
+ <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                >
+                <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="*"
+    android:textColor="#FF0000"
+    android:layout_marginTop="7dip"
+    ></TextView>
+            <TextView
+                android:layout_marginTop="4dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#5B5B5B"
+                android:layout_gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="18sp"
+                android:text="@string/selfremark" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/willposition_selfremark_id"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:drawableRight="@drawable/icon_arrow"
+                android:gravity="right"
+                android:hint="请输入"
+                android:singleLine="true"
+                android:textSize="16sp"
+                  android:textColor="@android:color/darker_gray"
+                 android:paddingRight="15dip"
+                android:ems="10"
+                />
+        </TableRow>
+        
+    </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>

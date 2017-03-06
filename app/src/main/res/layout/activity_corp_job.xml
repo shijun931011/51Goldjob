@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:focusable="true"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/public_top_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/public_layout_topbar" />
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@color/gray0"
+        android:padding="10dp"
+        android:gravity="center">
+        
+        <com.chyjr.goldjob.app.view.EditTextEx
+	        android:id="@+id/corp_job_keywords_et"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/shape_txt_bg_write"
+        	android:drawableLeft="@android:drawable/ic_menu_search"
+       		android:drawableRight="@drawable/delete_selector"
+       		android:singleLine="true"
+	        android:ems="10"
+	        android:hint="@string/please_input_keywords">
+
+        	<requestFocus />
+   		</com.chyjr.goldjob.app.view.EditTextEx>
+        
+    </LinearLayout>
+
+   <ListView
+        android:id="@+id/corp_job_filter_listview"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/border_top_bottom_line">
+    </ListView>
+ 
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:gravity="right"
+       android:layout_marginTop="10dip"
+       android:layout_marginRight="5dip"
+       >
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="清除筛选条件"
+           android:textColor="@color/blue"
+           android:textSize="16sp"
+           android:layout_marginRight="5dip"
+           android:id="@+id/removeConditionView"
+           ></TextView>
+       
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/corp_job_search_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_shape"
+            android:text="@string/search"
+            android:minHeight="38dp"
+            android:textSize="20sp"
+            android:textColor="@color/text_white"
+             />
+    </LinearLayout>
+    
+</LinearLayout>

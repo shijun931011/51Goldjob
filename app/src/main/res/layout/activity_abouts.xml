@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+        
+	    <include
+	        android:id="@+id/public_top_bar"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        layout="@layout/public_layout_topbar" />
+
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:gravity="top"
+        android:layout_marginTop="20dip"
+        android:layout_marginBottom="20dip"
+        android:orientation="vertical" >
+	    
+	    <TextView
+	        android:textSize="16sp"
+	        android:id="@+id/aboutus_title_txt"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@drawable/orange"
+	        android:text="@string/other_aboutus_title" />
+        
+	    <TextView
+        	android:layout_marginTop="10dip"
+	        android:id="@+id/aboutus_description_txt"
+	        android:background="@drawable/shape"
+	        android:layout_width="fill_parent"
+	        android:textColor="#5B5B5B"
+	        android:layout_height="match_parent"
+	        android:scrollbars="vertical"
+	        android:singleLine="false"
+	        android:textSize="15sp"
+	        android:text="@string/other_aboutus_description" />
+        
+    </LinearLayout>
+    
+    
+</LinearLayout>

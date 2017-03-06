@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/btn_add_max"
+    android:insetTop="3dp"
+    android:insetBottom="3dp"
+    android:insetLeft="50dp"
+     >
+
+</inset>

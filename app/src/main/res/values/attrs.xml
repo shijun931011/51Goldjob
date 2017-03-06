@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextImageButton"> 
+        <attr name="text" format="string" />
+        <attr name="textSize" format="dimension"/> 
+        <attr name="textColor" format="color|reference" /> 
+    </declare-styleable> 
+    
+    <!-- EasyProgressBar 文本显示格式 -->
+    <declare-styleable name="EasyProgressBar">
+        <attr name="textEnd" format="string" /><!-- 后缀 -->
+    </declare-styleable>
+</resources>

@@ -1,0 +1,69 @@
+<resources>
+    <string name="base">http://10.12.0.110:8090/vita/api/</string>
+    
+    <!-- uri resource -->
+    
+    <string name="A0001">pass</string><!-- 验证码发送到邮箱 -->
+    <string name="A0002">pass</string><!-- 找回密码 -->
+    
+    <string name="D0001">login</string><!-- 登录 -->
+    <string name="D0002">other</string><!-- 数据字典 -->
+    <string name="G0002">other</string><!-- 意见反馈 -->
+    <string name="C0000">other</string><!-- 首页滚动广告 -->
+    
+    <string name="R0001">reg</string><!-- 个人用户注册 -->
+    
+    <string name="N0002">newslist</string><!-- 金融资讯 -->
+    <string name="N0003">newsphoto</string><!-- 滚动广告 -->
+    
+    <string name="Q0001">enterprise</string><!-- 公司职位 -->
+    <string name="Q0002">enterprise</string><!-- 公司职位-职位详情 -->
+    <string name="Q0003">enterprise</string><!-- 公司职位-投递简历 -->
+    <string name="Q0004">enterprise</string><!-- 公司职位-收藏职位 -->
+    
+    <string name="P0002">resume</string><!-- 修改密码 -->
+    <string name="P0003">resume</string><!-- 职位收藏夹 -->
+    <string name="P0004">resume</string><!-- 职位申请记录 -->
+    <string name="M0027">resume</string><!-- 删除职位收藏 -->
+    <string name="P0001">resume</string><!-- 用户简历列表 -->
+    
+    <string name="M0024">createresume</string><!-- 简历创建 -->
+    <string name="M0025">my</string><!-- 刷新简历 -->
+    <string name="M0023">my</string><!-- 简历删除 -->
+    <string name="M0001">my</string><!-- 简历预览 -->
+    <string name="M0002">my</string><!-- 简历完整度 -->
+    <string name="M0013">my</string><!-- 设置简历公开 -->
+    <string name="M0003">my</string><!-- 简历基本信息查询 -->
+    <string name="M0004">my</string><!-- 求职意向查询 -->
+    <string name="M0014">my</string><!-- 求职意向保存 -->
+    <string name="M0005">my</string><!-- 工作经历查询 -->
+    <string name="M0015">my</string><!-- 工作经历保存 -->
+    <string name="M0008">my</string><!-- 项目经验查询 -->
+    <string name="M0018">my</string><!-- 项目经验编辑 -->
+    <string name="M0006">my</string><!-- 教育经历查询 -->
+    <string name="M0016">my</string><!-- 教育经历编辑 -->
+    <string name="M0007">my</string><!-- 语言能力查询 -->
+    <string name="M0017">my</string><!-- 语言能力编辑 -->
+    <string name="M0009">my</string><!-- 培训经历查询 -->
+    <string name="M0019">my</string><!-- 培训经历编辑 -->
+    <string name="M0010">my</string><!-- 证书查询 -->
+    <string name="M0020">my</string><!-- 证书编辑 -->
+    <string name="M0011">my</string><!-- 附加信息查询 -->
+    <string name="M0021">my</string><!-- 附加信息编辑 -->
+    <string name="M0012">my</string><!-- 高级人才附加信息查询 -->
+    <string name="M0022">my</string><!-- 高级人才附加信息编辑 -->
+    
+    <string name="L0001">hunter</string><!-- 猎头职位-职位搜索 -->
+    <string name="L0002">hunter</string><!-- 猎头职位-职位搜索-职位详情 -->
+    <string name="L0003">hunter</string><!-- 猎头职位-投递简历 -->
+    <string name="L0004">hunter</string><!-- 猎头职位-收藏职位 -->
+    
+    <string name="P0006">resume</string><!-- 私信-收件箱 -->
+    <string name="P0016">resume</string><!-- 私信-回复 -->
+    <string name="P0026">resume</string><!-- 私信-回复列表 -->
+    <string name="P0036">resume</string><!-- 私信-删除 -->
+    <string name="P0028">resume</string><!-- 私信-私信通知 -->
+    
+    <string name="C0001">h5</string><!-- 首页底部招聘页面跳转按钮 -->
+
+</resources>

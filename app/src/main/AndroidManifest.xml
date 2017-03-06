@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.a51goldjob">
+
+    <uses-sdk android:targetSdkVersion="25" android:minSdkVersion="15"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.example.user.a51goldjob.activity.MainActivity" android:label="@string/app_name" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!-- 首页 -->
+        <activity android:name="com.example.user.a51goldjob.activity.HomeIntroductionActivity" android:screenOrientation="portrait"/>
+
+        <!-- 引导页 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.HomeActivity" android:screenOrientation="portrait" android:launchMode="singleTask"/>
+
+        <!-- 首页 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.OtherActivity" android:screenOrientation="portrait"/>
+
+        <!-- 更多 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.AboutUsActivity" android:screenOrientation="portrait"/>
+
+        <!-- 关于我们 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.VersionCheckActivity" android:screenOrientation="portrait"/>
+
+        <!-- 版本更新 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.ContactActivity" android:screenOrientation="portrait"/>
+
+        <!-- 意见反馈 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.NewsActivity" android:screenOrientation="portrait"/>
+
+        <!-- 金融快讯 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.NewsDetailsActivity" android:screenOrientation="portrait"/>
+
+        <!-- 内容详情 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.PolicyActivity" android:screenOrientation="portrait"/>
+
+        <!-- 政策法规 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.PolicyListActivity" android:screenOrientation="portrait"/>
+
+        <!-- 政策法规列表 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.PolicyListDetailsActivity" android:screenOrientation="portrait"/>
+
+        <!-- 政策法规明细 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.DisclaimerActivity" android:screenOrientation="portrait"/>
+
+        <!-- 免责声明 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.LoginActivity" android:screenOrientation="portrait"/>
+
+        <!-- 登录 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.RegisterActivity" android:screenOrientation="portrait"/>
+
+        <!-- 注册 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.CityChooserActivity" android:screenOrientation="portrait"/>
+
+        <!-- 地区选择 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.AnotherCopyOfCityChooserActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.example.user.a51goldjob.activity.EducationMajorRemarkActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.example.user.a51goldjob.activity.ContentInfoActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.example.user.a51goldjob.activity.UserCenterActivity" android:screenOrientation="portrait"/>
+
+        <!-- 个人中心 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.JobApplyAcativity" android:screenOrientation="portrait"/>
+
+        <!-- 职位申请记录 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.JobApplyDetailsActivity" android:screenOrientation="portrait"/>
+
+        <!-- 职位申请记录明细 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.JobFavoriteActivity" android:screenOrientation="portrait"/>
+
+        <!-- 职位收藏夹 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.ChangedPasswordActivity" android:screenOrientation="portrait"/>
+
+        <!-- 更改密码 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.ChooseResumeActivity" android:screenOrientation="portrait"/>
+
+        <!-- 选择简历 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.HunterJobActivity" android:screenOrientation="portrait"/>
+
+        <!-- 猎头职位 -->
+
+
+        <activity android:name=".activity.MyResumeActivity" android:screenOrientation="portrait"/>
+
+        <!-- 我的简历 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.ResumePreviewActivity" android:screenOrientation="portrait"/>
+
+        <!-- 简历明细预览 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.ResumeEditActivity" android:screenOrientation="portrait"/>
+
+        <!-- 简历编辑 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.ResumeCreateActivity" android:screenOrientation="portrait"/>
+
+        <!-- 简历创建 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.JobListActivity" android:screenOrientation="portrait"/>
+
+        <!-- 职位列表 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.JobListFilterActivity" android:screenOrientation="portrait"/>
+
+        <!-- 职位列表筛选 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.DictSelectorActivity" android:screenOrientation="portrait"/>
+
+        <!-- 数据字典选择器 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.CorpJobActivity" android:screenOrientation="portrait"/>
+
+        <!-- 企业职位 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.ResetPasswordActivity" android:screenOrientation="portrait"/>
+
+        <!-- 重置密码 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.WorkHistoryActivity" android:screenOrientation="portrait"/>
+
+        <!-- 工作经历 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.BaseDocumentActivity" android:screenOrientation="portrait"/>
+
+        <!-- 基本资料 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.WorkHistoryEditActivity" android:screenOrientation="portrait"/>
+
+        <!-- 工作经历编辑 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.CommonTextAreaActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.AddtionalContentAty" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.WillPositionActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.ProjectExperienceActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.ProjectExperienceEditActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.EducationActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.EducationEditActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.LanguageActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.TrainingActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.ProjectTaskActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.TrainingEditActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.CertActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.CertEditActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.AdditionalActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.AdvancedActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.ProjectRemarkActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.SubjectRemarkActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.example.user.a51goldjob.activity.AdditionalEditActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.AdditionalSubjectActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.MessageActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.WorkDescribeActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.MessageReturnActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.MessageReturnEditActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.MoreActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name=".activity.MoreIntroActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.MoreImageActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.MoreCooperationActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.MoreChallengeActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.ResumeNameEditActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+
+        <activity android:name="com.example.user.a51goldjob.activity.LanguageListActivity" android:screenOrientation="portrait"/>
+
+        <!-- 通用编辑框 -->
+
+    </application>
+
+</manifest>

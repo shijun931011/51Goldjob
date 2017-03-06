@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@drawable/line" >
+
+   
+	<ViewFlipper
+        android:id="@+id/home_viewflipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <include
+            android:id="@+id/home1"
+            layout="@layout/home1" />
+
+        <include
+            android:id="@+id/home2"
+            layout="@layout/home2" />
+
+        <include
+            android:id="@+id/home3"
+            layout="@layout/home3" />
+
+        <include
+            android:id="@+id/home4"
+            layout="@layout/home4" />
+    </ViewFlipper>     
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+			<ImageView android:id="@+id/training_list_item_delete_imageview" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+				android:src="@drawable/delete_one"
+				android:layout_margin="10dp"
+				android:contentDescription="@string/opt_delete"
+				android:focusable="false"
+				android:clickable="true"
+				android:visibility="gone"
+			/>
+            <TextView
+                android:id="@+id/activity_training_list_item_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="26sp"
+                android:lineSpacingExtra="20dp"
+                android:text=""
+                android:textColor="#5B5B5B"
+                android:layout_marginBottom="2dip"
+                android:layout_toRightOf="@id/training_list_item_delete_imageview"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/activity_training_list_item_starttime"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_below="@id/activity_training_list_item_subject"
+                android:lineSpacingExtra="20dp"
+                android:text=""
+                android:layout_toRightOf="@id/training_list_item_delete_imageview"
+                android:textColor="@color/gray1"
+                android:textSize="14sp" />
+            
+            <TextView
+                android:id="@+id/training_date_lang"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_below="@id/activity_training_list_item_subject"
+                android:lineSpacingExtra="20dp"
+                android:layout_toRightOf="@id/activity_training_list_item_starttime"
+                android:text="@string/work_history_date_lang"
+                android:layout_marginLeft="0.5dip"
+                android:layout_marginRight="0.5dip"
+                android:textColor="@color/gray1"
+                android:textSize="14sp" />
+            
+            <TextView
+                android:id="@+id/activity_training_list_item_endtime"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_below="@id/activity_training_list_item_subject"
+                android:lineSpacingExtra="20dp"
+                android:layout_toRightOf="@id/training_date_lang"
+                android:text=""
+                android:textColor="@color/gray1"
+                android:textSize="14sp" />
+            
+            <TextView
+                android:id="@+id/activity_training_list_item_trainid"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_below="@id/activity_training_list_item_subject"
+                android:lineSpacingExtra="20dp"
+                android:layout_toRightOf="@id/activity_training_list_item_endtime"
+                android:text=""
+                android:visibility="gone"
+                android:textColor="@color/gray1"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    
+
+</LinearLayout>

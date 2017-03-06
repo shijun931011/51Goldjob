@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- 可以滚动查看页面所有内容 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/public_top_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/public_layout_topbar" />
+        
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+        
+        <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/row_resume_name_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:visibility="gone"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
+    <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textSize="15dp"
+                    android:textColor="#FF0000"
+                    android:layout_marginTop="7dip"
+                    ></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:textColor="#5B5B5B"
+                    android:layout_marginTop="4dip"
+                    android:textSize="18sp"
+                    android:text="@string/resume_name" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/resume_name_id"
+                android:layout_height="wrap_content"       
+                android:drawableRight="@drawable/icon_arrow"
+                android:ems="10"
+                android:hint="请输入简历名称"
+                android:textSize="16sp"
+                android:gravity="right"
+                />
+        </TableRow>    
+            
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:background="@drawable/btn_layout_list_two"
+            android:padding="5dip"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="*"
+                    android:textSize="15dp"
+                   android:textColor="#FF0000"
+                   android:layout_marginTop="7dip"
+                    ></TextView>
+                <TextView
+                    android:layout_marginTop="7dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                     android:paddingLeft="10dp"
+                     android:textColor="#5B5B5B"
+                    android:textSize="18sp"
+                    android:text="@string/base_name"
+                 />
+                
+            </LinearLayout>
+
+                <EditText
+                    android:id="@+id/basedocument_name_id"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_shape"
+                    android:drawableRight="@drawable/icon_arrow"
+                    android:ems="10"
+                    android:layout_width="20dip"
+                    android:hint="请输入您的姓名"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="16sp"
+                    android:lines="1"
+                    android:paddingRight="10dip"
+                    android:textColor="@android:color/darker_gray"
+                    android:gravity="right"
+                 />
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_layout_list_two"
+            android:padding="5dip"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"               
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="#FF0000"
+                    android:layout_marginTop="7dip"
+                 ></TextView>
+                <TextView
+                    android:textSize="18sp"
+                    android:textColor="#5B5B5B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="7dip"
+                    android:text="@string/base_sex" />
+</LinearLayout>
+            <TextView
+                android:lines="1"
+                android:id="@+id/basedocument_sex_id"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:drawableRight="@drawable/icon_arrow"
+                android:gravity="right"
+                android:hint="@string/choose_hit"
+                android:tag="DICT_BASE_SEX"
+                android:paddingRight="10dip"
+                android:textSize="16sp"
+                android:ems="10"
+                android:textColor="@android:color/darker_gray"
+                />
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_layout_list_two"
+            android:padding="5dip"
+            >
+           <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="*"
+                   android:textColor="#FF0000"
+                    android:layout_marginTop="7dip"
+                 ></TextView>
+                <TextView
+                   android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="#5B5B5B"
+                   android:layout_gravity="left|center_vertical"
+                   android:paddingLeft="10dp"
+                   android:layout_marginTop="7dip"
+                   android:text="@string/base_borndate" />
+           </LinearLayout>
+
+            <TextView
+                android:lines="1"
+                android:textColor="@android:color/darker_gray"
+                android:id="@+id/basedocument_borndate_id"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:drawableRight="@drawable/icon_arrow"
+                android:gravity="right"
+                android:hint="@string/choose_hit"
+                android:tag="DICT_COMP_CITY"	
+                android:textSize="16sp"
+                android:ems="10"
+                  android:paddingRight="10dip"
+                android:clickable="true"
+                />
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_layout_list_two"
+            android:padding="5dip"
+             >
+<LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                
+                >
+                <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="*"
+    android:textColor="#FF0000"
+    android:layout_marginTop="7dip"
+    ></TextView>
+            <TextView
+                 android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#5B5B5B"
+                android:layout_gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/base_address" 
+                android:layout_marginTop="7dip"
+                />
+            </LinearLayout>
+
+            <EditText
+                android:lines="1"
+                android:textColor="@android:color/darker_gray"
+                android:id="@+id/basedocument_address_id"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:drawableRight="@drawable/icon_arrow"
+                android:ems="10"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:hint="请输入"
+             android:paddingRight="10dip"
+                android:gravity="right"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_layout_list_two"
+            android:padding="5dip"
+            >
+<LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                
+                >
+                <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="*"
+    android:textColor="#FF0000"
+    android:layout_marginTop="7dip"
+    ></TextView>
+            <TextView
+                  android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:textColor="#5B5B5B"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="7dip"
+                android:text="@string/base_telephone" />
+            </LinearLayout>
+
+            <EditText
+                android:lines="1"
+                android:textColor="@android:color/darker_gray"
+                android:id="@+id/basedocument_telephone_id"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:drawableRight="@drawable/icon_arrow"
+                android:ems="10"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:hint="请输入"
+                android:textSize="16sp"
+                android:gravity="right"
+                />
+        </TableRow>
+        
+         <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_layout_list_two"
+            android:padding="5dip"
+            >
+<LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                
+                >
+                <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="*"
+    android:textColor="#FF0000"
+    android:layout_marginTop="7dip"
+    ></TextView>
+            <TextView
+                  android:textSize="18sp"
+                  android:textColor="#5B5B5B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dip"
+                android:layout_gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/base_jobstatus" />
+            </LinearLayout>
+
+            <TextView
+                android:lines="1"
+                android:textColor="@android:color/darker_gray"
+                android:id="@+id/basedocument_jobstatus_id"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:drawableRight="@drawable/icon_arrow"
+                android:gravity="right"
+                android:hint="@string/choose_hit"
+                android:textSize="16sp"
+                android:tag="DICT_RESUME_JOBSTATU"	
+                android:ems="10"
+                />
+        </TableRow>
+        
+          <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_layout_list_two"
+            android:padding="5dip"
+            >
+
+              <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                
+                >
+                <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="*"
+    android:textColor="#FF0000"
+    android:layout_marginTop="7dip"
+    ></TextView>
+            <TextView
+                  android:textSize="18sp"
+                  android:textColor="#5B5B5B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="7dip"
+                android:text="@string/base_workyears" />
+            </LinearLayout>
+
+            <TextView
+                android:lines="1"
+                android:textColor="@android:color/darker_gray"
+                android:id="@+id/basedocument_workyears_id"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:drawableRight="@drawable/icon_arrow"
+                android:gravity="right"
+                android:textSize="16sp"
+                android:hint="@string/choose_hit"
+                android:tag="DICT_RESUME_WORKYEAR"	
+                android:ems="10"
+                />
+        </TableRow>
+        
+         <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_layout_list_two"
+            android:padding="5dip">
+           <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                
+                >
+                <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="*"
+    android:textColor="#FF0000"
+    android:layout_marginTop="7dip"
+    ></TextView>
+            <TextView
+                  android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:textColor="#5B5B5B"
+                android:layout_marginTop="7dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/base_salary" />
+            </LinearLayout>
+
+            <TextView
+                android:lines="1"
+                android:textColor="@android:color/darker_gray"
+                android:id="@+id/basedocument_salary_id"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:drawableRight="@drawable/icon_arrow"
+                android:gravity="right"
+                android:textSize="16sp"
+                android:hint="@string/choose_hit"
+                android:tag="DICT_RESUME_SALARY"	
+                android:ems="10"
+                />
+        </TableRow>
+        
+          <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_layout_list_two"
+            android:tag="@string/base_idtype"
+            android:padding="5dip"
+            >
+          <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                
+                >
+                <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="*"
+                   android:textColor="#FF0000"
+                    android:layout_marginTop="7dip"
+                ></TextView>
+                <TextView
+                  android:textSize="18sp"
+                  android:textColor="#5B5B5B"
+                  android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="left|center_vertical"
+                 android:paddingLeft="10dp"
+                 android:layout_marginTop="7dip"
+                android:text="@string/base_idtype" />
+          </LinearLayout>
+               <TextView
+                android:lines="1"
+                android:textColor="@android:color/darker_gray"
+                android:id="@+id/basedocument_idtype_id"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:drawableRight="@drawable/icon_arrow"
+                android:gravity="right"
+                android:textSize="16sp"
+                android:hint="@string/choose_hit"
+                android:tag="DICT_RESUME_DOCUMENT"	
+                android:ems="10"
+                />
+        </TableRow>
+        
+          <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_layout_list_two"
+            android:padding="5dip"
+            >
+           <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                
+                >
+                <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="*"
+                     android:textColor="#FF0000"
+                     android:layout_marginTop="7dip"
+                ></TextView>
+                 <TextView
+                  android:textSize="18sp"
+                  android:textColor="#5B5B5B"
+                  android:layout_width="wrap_content"
+                  android:layout_marginTop="7dip"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="left|center_vertical"
+                  android:paddingLeft="10dp"
+                  android:text="@string/base_id" />
+            </LinearLayout>
+
+            <EditText
+                android:lines="1"
+                android:textColor="@android:color/darker_gray"
+                android:id="@+id/basedocument_id_id"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:drawableRight="@drawable/icon_arrow"
+                android:ems="10"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:hint="请输入"
+                android:gravity="right"
+                />
+        </TableRow>
+        
+          <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_layout_list_two"
+            android:padding="5dip"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                
+                >
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="#FF0000"
+                android:layout_marginTop="7dip"
+                ></TextView>
+                <TextView
+                android:textSize="18sp"
+                android:textColor="#5B5B5B"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="7dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="户口" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/basedocument_accountcityid"
+                android:lines="1"
+                android:textColor="@android:color/darker_gray"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:drawableRight="@drawable/icon_arrow"
+                android:ems="10"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:hint="请输入"
+                android:gravity="right"
+                />
+        </TableRow>
+          
+
+          <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_layout_list_two"
+            android:padding="5dip"
+            android:visibility="gone"
+            >
+             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="3dip"
+                
+                >
+                <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                 android:text=""
+                 android:textColor="#FF0000"
+                  android:layout_marginTop="7dip"
+                 ></TextView>
+                <TextView
+                  android:textSize="18sp"
+                  android:layout_marginTop="7dip"
+                  android:textColor="#5B5B5B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="" />
+            </LinearLayout>
+
+            <EditText
+                android:lines="1"
+                android:textColor="@android:color/darker_gray"
+                android:id="@+id/basedocument_accountcityid_id"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:textSize="16sp"
+                android:drawableRight="@drawable/icon_arrow"
+                android:ems="10"
+                android:hint="请输入"
+                android:gravity="right"
+                />
+        </TableRow>
+        
+        
+          <TableRow
+              android:id="@+id/row_resume_isopen_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_layout_list_two"
+            android:tag="resume_isopen"
+            android:visibility="gone"
+            android:padding="5dip"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                
+                >
+                <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="*"
+                   android:textColor="#FF0000"
+                   android:layout_marginTop="7dip"
+                 ></TextView>
+                <TextView
+                  android:textSize="18sp"
+                  android:textColor="#5B5B5B"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="7dip"
+                  android:layout_gravity="left|center_vertical"
+                  android:paddingLeft="10dp"
+                  android:padding="7dip"
+                  android:text="@string/resume_isopen" />
+            </LinearLayout>
+
+            <TextView
+                android:lines="1"
+                android:textColor="@android:color/darker_gray"
+                android:id="@+id/resume_isopen_id"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:drawableRight="@drawable/icon_arrow"
+                android:gravity="right"
+                android:hint="@string/choose_hit"
+                android:tag="DICT_RESUME_ISOPEN"	
+                android:ems="10"
+                />
+        </TableRow>
+    </TableLayout>
+    </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

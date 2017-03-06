@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/public_top_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/public_layout_topbar" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:src="@color/gray1" />
+
+    <com.example.user.a51goldjob.view.LineEditText
+        android:id="@+id/login_email_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_shape"
+        android:ems="10"
+        android:hint="@string/login_email_hit"
+        android:inputType="textEmailAddress" 
+        android:textSize="16sp"
+        >
+  
+        <requestFocus />
+    </com.example.user.a51goldjob.view.LineEditText>
+
+    <com.example.user.a51goldjob.view.LineEditText
+        android:id="@+id/login_password_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_shape"
+        android:ems="10"
+        android:hint="@string/password_type"
+        android:inputType="textPassword" 
+        android:textSize="16sp"
+        />
+
+    <!-- 左边安全登录、右边忘记密码 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:gravity="right" 
+        android:background="@android:color/white"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_back_selector"
+            android:gravity="right|center_vertical"
+            android:visibility="visible" >
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                android:id="@+id/login_security_center_right_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/login_forget_password"
+                android:textColor="@drawable/orange"
+                android:textSize="16sp"
+                android:visibility="visible" 
+                android:layout_marginRight="7dip"
+                />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_arrow"
+                    android:layout_marginRight="6dip"
+                    ></ImageView>
+            </LinearLayout>
+
+            
+          
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/login_bottom_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/btn_shape"
+        android:gravity="center"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:textSize="20sp"
+        android:text="@string/login"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

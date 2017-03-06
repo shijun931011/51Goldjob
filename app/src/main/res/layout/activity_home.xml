@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/home_top_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="54.5dp"
+            layout="@layout/home_layout_topbar" />
+        
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/gray"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+        
+                <TextView
+                    android:id="@+id/home_title_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:padding="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    android:background="@drawable/shape_txt_bg_write"
+                    android:textColor="#5B5B5B"
+                    android:drawableRight="@drawable/arrow"
+                    android:textSize="16sp"
+                    
+                    android:visibility="visible" 
+                    />
+                <com.example.user.a51goldjob.view.EditTextSearch
+                    android:id="@+id/corp_job_keywords_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:singleLine="true"
+                    android:layout_marginLeft="3dp"
+                    android:padding="7dp"
+                    android:background="@drawable/shape_txt_bg_write"
+                    android:drawableRight="@drawable/icon_search"
+                    android:ems="15"
+                    android:hint="@string/please_input_keywords"
+                     />
+    </LinearLayout>
+    
+	        <include
+            android:id="@+id/activity_news_list_slideshowview_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/activity_news_slideshowview"
+            android:visibility="visible" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical" 
+        android:background="@color/text_white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical" 
+            >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center" 
+            	android:layout_marginTop="15dp"
+            	
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    >
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"
+                        android:layout_marginLeft="10dip" 
+                        >
+
+                        <ImageView
+                            android:id="@+id/home_usercenter_img"
+                            android:layout_width="70dip"
+    						android:layout_height="60dip"
+                            android:src="@drawable/btn_usercenter_round" />
+
+                        <LinearLayout
+                            android:layout_width="70dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="65dip"
+                                android:text="@string/activity_user_home_name"
+                                android:textColor="#5B5B5B"
+                                android:textSize="15sp" 
+                                android:gravity="center"
+                                />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dip" 
+                        android:layout_marginTop="10dip">
+
+                        <ImageView
+                            android:id="@+id/home_corpjob_img"
+                            android:layout_width="70dip"
+    						android:layout_height="60dip"
+                            android:src="@drawable/btn_corpjob_round" />
+
+                        <LinearLayout
+                            android:layout_width="70dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="65dip"
+                                android:text="@string/btn_corpjob"
+                                  android:textColor="#5B5B5B"
+                                android:textSize="15sp" 
+                                 android:gravity="center"
+                                />
+
+                        </LinearLayout>
+                    </FrameLayout>
+                    
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" 
+                        android:layout_marginLeft="40dip" 
+                        android:layout_marginTop="10dip">
+
+                        <ImageView
+                            android:id="@+id/home_myresume_img"
+                            android:layout_width="70dip"
+    						android:layout_height="60dip"
+                            android:src="@drawable/btn_myresume_round" />
+
+                        <LinearLayout
+                            android:layout_width="70dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="65dip"
+                                android:text="@string/btn_myresume"
+                                 android:textColor="#5B5B5B"
+                                android:textSize="15sp" 
+                                android:gravity="center"
+                                />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dip"
+                android:layout_marginBottom="20dip"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip">
+
+                        <ImageView
+                            android:id="@+id/home_hunterjob_img"
+                            android:layout_width="70dip"
+    						android:layout_height="60dip"
+                            android:src="@drawable/btn_hunterjob_round" />
+
+                        <LinearLayout
+                            android:layout_width="70dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="65dip"
+                                android:text="@string/btn_hunterjob"
+                                  android:textColor="#5B5B5B"
+                                android:textSize="15sp" 
+                                android:gravity="center"
+                                />
+                        </LinearLayout>
+                    </FrameLayout>
+                    
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" 
+                        android:layout_marginLeft="40dip">
+
+                        <ImageView
+                            android:id="@+id/home_news_img"
+                            android:layout_width="70dip"
+    						android:layout_height="60dip"
+                            android:src="@drawable/btn_news_round" />
+
+                        <LinearLayout
+                            android:layout_width="70dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="65dip"
+                                android:text="@string/btn_news"
+                                  android:textColor="#5B5B5B"
+                                android:textSize="15sp" 
+                                android:gravity="center"
+                                />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dip" >
+
+                        <ImageView
+                            android:id="@+id/home_selection_img"
+                            android:layout_width="70dip"
+    						android:layout_height="60dip"
+                            android:src="@drawable/btn_selection_round" />
+
+                        <LinearLayout
+                            android:layout_width="70dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="65dip"
+                                android:text="@string/btn_selection"
+                                android:textColor="#5B5B5B"
+                                android:textSize="15sp" 
+                                android:gravity="center"
+                                />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="@color/gray"
+        android:layout_alignParentBottom="true"
+        >
+                <include
+            android:id="@+id/home_bottom_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/home_layout_bottombar" />
+                </LinearLayout>
+
+    <!--  -->
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape>
+            <solid android:color="@color/gray1" />
+        </shape>
+    </item>
+    <item 
+        android:bottom="1dp"
+        android:top="1dp">
+        <shape>
+            <solid android:color="@color/text_white" />
+
+            <padding
+                android:bottom="1dp"
+                android:left="1dp"
+                android:right="1dp"
+                android:top="1dp" />
+        </shape>
+    </item>
+    <item >
+        <selector>
+		    <item android:drawable="@drawable/btn_layout_list_shape_one" android:state_pressed="false"/>
+		    <item android:drawable="@drawable/btn_layout_list_shape_two" android:state_pressed="true"/>
+		    <item android:drawable="@android:color/transparent" />
+        </selector>
+    </item>
+</layer-list>

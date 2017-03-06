@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="gray">#EFEFEF</color>
+    <color name="gray0">#CFCFCF</color>
+    <color name="gray1">#ACACAC</color>
+    <color name="gray2">#7C7C7C</color>
+    <color name="blue">#6495ED</color>
+    <color name="black">#000000</color>
+    <color name="transparent_black">#b0000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="listitem_transparent">#00000000</color>
+    <color name="listitem_black">#ff000000</color>
+    <color name="listitem_white">#ffffffff</color>
+    <color name="listitem_blue">#0e5986</color>
+    <color name="listitem_gray">#ff9da19e</color>
+    <color name="listitem_green">#ffe3ffc6</color>
+    <color name="listitem_greenyellow">#ff87b869</color>
+    <color name="listitem_yellow">#fffaffbf</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_black">#333333</color>
+    <color name="text_red">#ff0000</color>
+    <drawable name="orange">#FF9912</drawable>
+    <drawable name="orange2">#D2691E</drawable>
+    <drawable name="btn_back_bg_selected">#c14303</drawable>
+    <drawable name="btn_back_bg_default">#00ea5407</drawable>
+    <drawable name="title_divider">#20222222</drawable>
+    <drawable name="cyan">#8EE5EE</drawable>
+
+</resources>
